@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(39, 39, 93);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: antiquewhite;
+    background: rgb(39, 39, 93);
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "monospace", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.logoHeader {
+    height: 50px;
+    padding-left: 60px;
+}
+
+.headline {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.imgSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1380px;
+}
+
+.image-button {
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.images {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+    box-shadow: 0 0 36px rgb(0 0 0 / 80%);
+}
+
+.images:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 16px rgba(35, 31, 31, 0.664);
+    cursor: pointer;
+}
+
+.myDialog {
+    margin: auto;
+    padding: 16px;
+    border: none;
+}
+
+::backdrop{ 
+    background: rgba(0, 0, 0, 0.733);
+    backdrop-filter: blur(2px);
+}
+
+.dialogImg {
+    max-width: 400px;
+}
+
+.dialogTitle {
+    font-size: large;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0px 10px;
+}
+
+.closeDialog {
+    display: block;
+    margin-left: 370px;
+    margin-bottom: 10px;
+    padding: 3px 3px 3px;
+    cursor: pointer;
+}
+
+.dialogFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dialogNavBack{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dialogNavNext{
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 300px;
+    background: rgb(39, 39, 93);;
+}
+
+.logoFooter{
+    height: 50px;
+}
+
+.footerLinks{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}

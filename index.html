@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="icon" type="image/png" href="bilderFotogram/favicon.png">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logoHeader" src="bilderFotogram/Fotogram_Logo.svg" alt="Fotogram"></a>
+    </header>
+
+
+    <main>
+        <h1 class="headline">London 2025💂</h1>
+
+        <section class="imgSection" id="imgSection">
+            <button class="image-button" type="button" data-id="0" onclick="openDialog(0)">
+                <img src="bilderFotogram/london(1).jpg" class="images" alt="London Eye"> </button>
+
+            <button class="image-button" type="button" data-id="1" onclick="openDialog(1)">
+                <img src="bilderFotogram/london(2).jpg" class="images" alt="Royal Guard"> </button>
+
+            <button class="image-button" type="button" data-id="2" onclick="openDialog(2)">
+                <img src="bilderFotogram/london(3).jpg" class="images" alt="Big Ben"> </button>
+
+            <button class="image-button" type="button" data-id="3" onclick="openDialog(3)">
+                <img src="bilderFotogram/london(4).jpg" class="images" alt="Notting Hill"> </button>
+
+            <button class="image-button" type="button" data-id="4" onclick="openDialog(4)">
+                <img src="bilderFotogram/london(5).jpg" class="images" alt="Covent Garden"> </button>
+
+            <button class="image-button" type="button" data-id="5" onclick="openDialog(5)">
+                <img src="bilderFotogram/london(6).jpg" class="images" alt="Guinness"> </button>
+
+            <button class="image-button" type="button" data-id="6" onclick="openDialog(6)">
+                <img src="bilderFotogram/london(7).jpg" class="images" alt="Shard"> </button>
+
+            <button class="image-button" type="button" data-id="7" onclick="openDialog(7)">
+                <img src="bilderFotogram/london(8).jpg" class="images" alt="Tube"> </button>
+
+            <button class="image-button" type="button" data-id="8" onclick="openDialog(8)">
+                <img src="bilderFotogram/london(9).jpg" class="images" alt="St.Pauls Cathedral"> </button>
+
+            <button class="image-button" type="button" data-id="9" onclick="openDialog(9)">
+                <img src="bilderFotogram/london(10).jpg" class="images" alt="Walkie Talkie"> </button>
+
+            <button class="image-button" type="button" data-id="10" onclick="openDialog(10)">
+                <img src="bilderFotogram/london(11).jpg" class="images" alt="Camden Town"> </button>
+
+            <button class="image-button" type="button" data-id="11" onclick="openDialog(11)">
+                <img src="bilderFotogram/london(12).jpg" class="images" alt="Soho"> </button>
+            
+        </section>
+
+        <dialog class="myDialog" id="dialogPreview" aria-labelledby="dialogTitle">
+            <button class="closeDialog" onclick="closeDialog()" aria-label="exit">X</button>
+            <img class="dialogImg" id="dialogImg" src="" alt="">
+            <p class="dialogTitle" id="dialogTitle"></p>
+
+            <section class="dialogFooter">
+                <button class="dialogNavBack" onclick="prevImg()">Back</button>
+                <p class="imgCounter" id="imageCounter"></p>
+                <button class="dialogNavNext" onclick="nextImg()">Next</button>
+            </section>
+        </dialog>
+    </main>
+
+    <footer class="footer">
+        <a href="index.html">
+            <img class="logoFooter" src="bilderFotogram/Fotogram_Logo.svg" alt="Fotogram_Logo">
+        </a>
+        <section class="">
+            <a href="kontakt.html" class="footerLinks">Kontakt</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>
